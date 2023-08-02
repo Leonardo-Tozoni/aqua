@@ -131,8 +131,15 @@ body {
 }
 
 .img_quadrado {
-	padding: 50px;
+	padding: 200px;
 	width: 100%;
+}
+
+.background-svg {
+	position: absolute;
+	top: 0;
+	right: -660px;
+	pointer-events: none;
 }
 
 .texto_play {
