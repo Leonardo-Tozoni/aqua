@@ -4,32 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/grid.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito&display=swap" rel="stylesheet"> 
+
   <title>Aqua Group</title>
 </head>
 <body>
 
-  <header>
-    <section class="header">
-      <div>
-        <img src="./img/logotipo.png" alt="logotipo">
-
-        <a href="#">
-          Home
-        </a>
-
-        <a href="">
-          Streams
-        </a>
-
-        <a href="">
-          Sobre
-        </a>
-      </div>
-    </section>
+  <header class="header">
+		<div class="container">
+			<a href="index.html" class="grid-4">
+				<img src="./img/logo.png" alt="Logotipo" style="width: 70px;">
+			</a>
+			<nav class="grid-12 header_menu">
+				<ul>
+          <li><a href="produtos.html">Home</a></li>
+					<li><a href="portfolio.html">Streams</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+          <li><a href="sobre.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
   </header>
 
   <section>
-    
+    <div>
+      <h1 class="">A comunidade de Gamers</h1>
+    </div>
   </section>
 </body>
 </html>
