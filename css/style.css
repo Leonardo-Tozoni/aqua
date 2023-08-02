@@ -2,6 +2,7 @@ body {
   background-color: #000;
 }
 
+/* Header */
 .header {
 	position: fixed;
 	top: 0;
@@ -17,7 +18,7 @@ body {
 .header_menu ul li {
 	display: inline-block;
 	margin-left: 25px;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 .header_menu ul li a {
@@ -31,4 +32,22 @@ body {
 
 .header_menu ul li a:hover {
 	color: #FFF;
+}
+
+/* Final Header */
+
+/* Inicio da introcução do site */
+
+.introducao {
+	font-size: 4em;
+	margin-top: 200px;
+	text-align: center;
+}
+
+.introducao_p {
+	margin-top: 40px;
+	font-size: 20px;
+	color: #9F9F9F;
+	text-align: center;
+	font-weight: 300;
 }
