@@ -39,15 +39,59 @@ body {
 /* Inicio da introcução do site */
 
 .introducao {
-	font-size: 4em;
+	font-family: Josefin Sans;
+	font-size: 70px;
+	line-height: 70px;
 	margin-top: 200px;
 	text-align: center;
 }
 
 .introducao_p {
 	margin-top: 40px;
+	margin-bottom: 40px;
 	font-size: 20px;
-	color: #9F9F9F;
+	color: #DAD7D7;
 	text-align: center;
-	font-weight: 300;
+	font-weight: 400;
+}
+
+.btn {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+}
+
+.btn_primary {
+	font-size: 18px;
+	font-weight: 500;
+	width: 150px;
+	height: 49px;
+	background-image: linear-gradient(to right, #244C60, #72B9C6);
+	color: #FFF;
+	border: none;
+	margin-right: 30px;
+
+	&:hover {
+		background-image: linear-gradient(to right, #fff, #D1EBF3);
+		border: none;
+		color: #000;
+		transition: 0.30s;
+	}
+}
+
+.btn_secondary {
+	font-size: 18px;
+	font-weight: 500;
+	width: 150px;
+	height: 49px;
+	background-color: transparent;
+	color: #437B8E;
+	border: 1px solid #437B8E;
+
+	&:hover {
+		background-color: #244C60;
+		color: #fff;
+		border: #244C60;
+		transition: 0.30s;
+	}
 }
