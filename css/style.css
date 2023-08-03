@@ -176,3 +176,49 @@ body {
 	font-size: 20px;
 	font-weight: 700;
 }
+
+.bg_img_fundo {
+	margin-top: 300px;
+	height: 690px;
+	background-image: url(../img/Section\ 3\ Background\ Image.svg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.5); 
+	-webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1.1) 28%, rgba(0, 0, 0, 0) 70%);
+  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 0) 100%);
+}
+
+.faca_amigos {
+	border: 1 px solid #000;
+	text-transform: uppercase;
+	font-weight: 700;
+	opacity: 1 !important;
+}
+
+.button-container {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+	width: 250px;
+	height: 49px;
+	background-color: #5b67f6;
+	color: #FFF;
+	border: 2px solid #FFF;
+	border-radius: 7px;
+
+	&:hover {
+		background-image: linear-gradient(to right, #fff, #D1EBF3);
+		border: none;
+		color: #000;
+		transition: 0.30s;
+	}
+
+	&:hover a {
+		color: #000;
+	}
+}
