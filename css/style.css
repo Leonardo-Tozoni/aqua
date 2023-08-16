@@ -816,3 +816,29 @@ variables
   font-size: 20px;
   font-weight: 700;
 }
+
+:root {
+  --popover-width: 250px;
+  --popover-control-gap: 4px;
+  --popover-viewport-gap: 20px;
+  --popover-transition-duration: 0.2s;
+}
+
+.popover {
+  position: fixed;
+  width: var(--popover-width);
+  z-index: var(--z-index-popover, 5);
+  margin-top: var(--popover-control-gap);
+  margin-bottom: var(--popover-control-gap);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s var(--popover-transition-duration), opacity var(--popover-transition-duration);
+}
+
+.popover--is-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity var(--popover-transition-duration);
+}
