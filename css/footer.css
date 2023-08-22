@@ -145,6 +145,12 @@ Usage: codyhouse.co/license
   border-top: var(--me6-border-width, 1px) var(--me6-border-style, solid) hsla(var(--me6-color-contrast-lower-hsl), var(--me6-border-o, 1));
 }
 
+.me6-border-top-1 {
+  --me6-border-o: 1;
+  border-top: var(--me6-border-width, 1px) var(--me6-border-style, solid) hsla(var(--me6-color-contrast-lower-hsl), var(--me6-border-o, 1));
+  margin-bottom: 20px;
+}
+
 .me6-flex-column {
   flex-direction: column;
 }

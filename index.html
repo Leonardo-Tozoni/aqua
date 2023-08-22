@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./css/grid.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/_1_card.css">
+  <link rel="stylesheet" href="./css/_1_back-to-top.css">
+  <link rel="stylesheet" href="./css/_1_reading-progressbar.css">
   
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,11 +30,18 @@
           <li><a href="index.html" class="ativo">Home</a></li>
 					<li><a href="stream.html">Streams</a></li>
 					<li><a href="sobre.html">Sobre</a></li>
-          <li><a href="https://wa.me/5511994326893?text=Adorei%20seu%20artigo" target="_blank">Contato</a></li>
+          <li><a href="https://lnk.bio/Aqua" target="_blank">Contato</a></li>
 				</ul>
 			</nav>
 		</div>
   </header>
+
+  <progress aria-hidden="true" class="reading-progressbar js-reading-progressbar" max="100" value="0">
+    <div class="reading-progressbar__fallback js-reading-progressbar__fallback"></div>
+  </progress>
+
+  <div class="">
+    <article class="js-reading-content">
 
   <section class="container">
     <div>
@@ -186,7 +195,7 @@
 
     <div class="card">
       <figure class="card__img-wrapper">
-        <img src="img/AQUA_TECH.png" alt="Image description">
+        <img src="img/invest.png" alt="Image description">
       </figure>
     
       <div class="alinhar">
@@ -202,7 +211,7 @@
 
     <div class="card">
       <figure class="card__img-wrapper">
-        <img src="img/AQUA_TECH.png" alt="Image description">
+        <img src="img/huniverse.png" alt="Image description">
       </figure>
     
       <div class="alinhar">
@@ -217,9 +226,61 @@
     </div>
   </section>
 
+  <section class="container" style="margin-top: 100px;">
+
+  <div class="carousel cs3-flex cs3-flex-column js-carousel" data-drag="on">
+    <p class="cs3-sr-only">Carousel items</p>
+  
+    <div class="carousel__wrapper cs3-order-2 cs3-overflow-hidden">
+      <ol class="carousel__list">
+        <li class="carousel__item">
+          <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">1</div>
+        </li>
+  
+        <li class="carousel__item">
+          <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">2</div>
+        </li>
+  
+        <li class="carousel__item">
+          <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">3</div>
+        </li>
+  
+        <li class="carousel__item">
+          <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">4</div>
+        </li>
+      </ol>
+    </div>
+    <nav class="cs3-margin-bottom-xs cs3-order-1 ">
+      <ul class="cs3-flex cs3-gap-3xs cs3-justify-end">
+        <li>
+          <button class="carousel__control carousel__control--prev js-carousel__control js-tab-focus">
+            <svg class="cs3-icon" viewBox="0 0 20 20">
+              <title>Show previous items</title>
+              <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            </svg>
+          </button>
+        </li>
+  
+        <li>
+          <button class="carousel__control carousel__control--next js-carousel__control js-tab-focus">
+            <svg class="cs3-icon" viewBox="0 0 20 20">
+              <title>Show next items</title>
+              <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  
+  </div>
+</article>
+</div>
+
   <!-- Footer -->
 
-  <footer class="main-footer me6-position-relative me6-z-index-1 me6-padding-top-xl">
+  <footer class="main-footer me6-position-relative me6-z-index-1 me6-padding-top-xl ">
+    <div class="me6-flex me6-flex-column me6-border-top me6-padding-y-xs me6-margin-top-lg me6-flex-row@md me6-justify-between@md me6-items-center@md"></div>
     <div class="me6-container me6-max-width-lg">
       <div class="me6-grid me6-gap-y-lg me6-gap-lg@lg">
         <div class="me6-col-3@lg me6-order-2@lg me6-text-right@lg">
@@ -233,9 +294,9 @@
             <li class="me6-col-6@xs me6-col-3@md">
               <h4 class="me6-margin-bottom-sm me6-text-base@md">COMUNIDADE</h4>
               <ul class="me6-grid me6-gap-xs me6-text-sm@md">
-                <li><a href="#0" class="main-footer__link">Discord</a></li>
-                <li><a href="#0" class="main-footer__link">Instagram</a></li>
-                <li><a href="#0" class="main-footer__link">Twitter "X"</a></li>
+                <li><a href="https://discord.gg/8CrP29dGer" target="_blank" class="main-footer__link">Discord</a></li>
+                <li><a href="https://www.instagram.com/aquagruu/" target="_blank" class="main-footer__link">Instagram</a></li>
+                <li><a href="https://twitter.com/AquaGruu" target="_blank" class="main-footer__link">Twitter "X"</a></li>
               </ul>
             </li>
   
@@ -285,16 +346,20 @@
       </div>
     </div>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://wa.me/5511994326893?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
-      z-index:1000;" target="_blank">
-    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    <a class="back-to-top js-back-to-top" href="#" data-offset="100">
+      <svg class="cd-icon" viewBox="0 0 20 20">
+        <polyline points="2 13 10 5 18 13" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </svg>
     </a>
+
   </footer>
 
+  <script src="js/script.js"></script>
   <script src="./js/_1_popover.js"></script>
   <script src="./js/_1_swipe-content.js"></script>
   <script src="./js/_2_carousel.js"></script>
+  <script src="./js/_1_back-to-top.js"></script>
+  <script src="./js/_1_reading-progressbar.js"></script>
 
 </body>
 </html>
