@@ -35,24 +35,6 @@
 		content.element.removeEventListener('touchend', handleEvent.bind(content));
 	};
 
-	function handleEvent(event) {
-		switch(event.type) {
-			case 'mousedown':
-			case 'touchstart':
-				startDrag(this, event);
-				break;
-			case 'mousemove':
-			case 'touchmove':
-				drag(this, event);
-				break;
-			case 'mouseup':
-			case 'mouseleave':
-			case 'touchend':
-				endDrag(this, event);
-				break;
-		}
-	};
-
 	function startDrag(content, event) {
 		content.dragging = true;
 		// listen to drag movements

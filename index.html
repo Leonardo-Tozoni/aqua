@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="./css/_1_card.css">
   <link rel="stylesheet" href="./css/_1_back-to-top.css">
   <link rel="stylesheet" href="./css/_1_reading-progressbar.css">
-  
+  <link rel="stylesheet" href="./css/_1_card-v2.css">
+  <link rel="stylesheet" href="./css/_2_team.css">
+  <link rel="stylesheet" href="./css/_1_main-header.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,28 +22,46 @@
 </head>
 <body>
 
-  <header class="header">
-		<div class="container">
-			<a href="index.html" class="grid-4">
-				<img src="img/logo.png" alt="Logotipo" style="width: 100px;">
-			</a>
-			<nav class="grid-12 header_menu">
-				<ul>
-          <li><a href="index.html" class="ativo">Home</a></li>
-					<li><a href="stream.html">Streams</a></li>
-					<li><a href="sobre.html">Sobre</a></li>
-          <li><a href="https://lnk.bio/Aqua" target="_blank">Contato</a></li>
-				</ul>
-			</nav>
-		</div>
+  <!-- Header -->
+  <header class="header mf1-position-relative js-header ">
+    <div class="header__container mf1-container mf1-max-width-lg">
+      <div class="header__logo">
+        <a href="#0">
+          <img src="./img/logo.png" alt="" style="width: 100px;">
+        </a>
+      </div>
+  
+      <button class="mf1-btn mf1-btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+        <i class="header__trigger-icon" aria-hidden="true"></i>
+        <span>Menu</span>
+      </button>
+  
+      <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
+        <div class="header__nav-inner">
+          <div class="header__label"></div>
+          <ul class="header__list">
+            <li class="header__item"><a href="index.html" class="header__link" aria-current="page">Home</a></li>
+            <li class="header__item"><a href="sobre.html" class="header__link">Sobre</a></li>
+            <li class="header__item"><a href="https://lnk.bio/Aqua" target="_blank" class="header__link">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
+    <!-- Final Header -->
+
+    <!-- Tag para animação de completar rolagem do site -->
 
   <progress aria-hidden="true" class="reading-progressbar js-reading-progressbar" max="100" value="0">
     <div class="reading-progressbar__fallback js-reading-progressbar__fallback"></div>
   </progress>
 
+  <!-- Div que chama o JS e envolve toda a página -->
+
   <div class="">
     <article class="js-reading-content">
+
+  <!-- Section 1 do site / Introdução -->
 
   <section class="container">
     <div>
@@ -57,6 +77,8 @@
       <button class="btn_secondary"><a href="sobre.html">Como funciona</a></button>
     </div>
   </section>
+
+  <!-- Mostre seu talento -> formulario externo -->
   <section>
     <div class="container quadrado">
       <h1 class="texto_play">Jogue <br>Recorde <br> Sorria</h1>
@@ -69,9 +91,11 @@
       <p class="texto_stream">
         Tem o desejo de se tornar streamer e não sabe por onde começar? Nós podemos te ajudar!
       </p>
-      <a href="" class="texto_link">Começar a Streamar <img src="img/CTA Arrow.svg" alt="" style="top: 103px; left: 420px; position: absolute;"></a>
+      <a href="formulario.html" class="texto_link">Começar a Streamar <img src="img/CTA Arrow.svg" alt="" style="top: 103px; left: 420px; position: absolute;"></a>
     </div>
   </section>
+
+  <!-- Section para discord do aqua -->
 
   <section >
     <div class="bg_img_fundo">
@@ -87,191 +111,67 @@
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <h1 class="introducao faca_amigos">
-        Conheça Nossos Streamers
-      </h1>
+  <!-- Section para os streamer do aqua -->
 
-      <!-- Sessão com CodyHouse -->
-
-      <section>
-        <div class="ta0-container ta0-max-width-adaptive-lg">
-          <div class="ta0-margin-bottom-lg">
-          </div>
-      
-          <div class="ta0-grid ta0-gap-sm">
-            <div class="ta0-bg-contrast-lower ta0-bg-opacity-30% ta0-radius-md ta0-padding-md ta0-flex@md ta0-flex-column@md ta0-col-4@md bg-twitch font-twitch">
-              <svg class="ta0-icon ta0-icon--xl ta0-color-contrast-low ta0-margin-bottom-2xs" aria-hidden="true" width="64" height="64" viewBox="0 0 64 64">
-                <polygon points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36" />
-                <polygon points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36" />
-              </svg>
-      
-              <blockquote class="ta0-line-height-md ta0-margin-bottom-md">Oi! Eu sou a tatah, apaixonada por webjoguinhos principalmente FPS e RP. Aqui tem muita gameplay ruim, mas sempre muita risada também! Seja bem vindo ao meu QG 🧡</blockquote>
-              
-              <footer class="ta0-flex ta0-flex-wrap ta0-items-center ta0-margin-top-auto@md">
-                <figure class="ta0-flex-shrink-0 ta0-margin-right-2xs" aria-hidden="true">
-                  <img class="ta0-block ta0-width-lg ta0-height-lg ta0-radius-50% ta0-border ta0-border-2 ta0-border-bg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/579deab2-8772-4041-8443-01d725b2c425-profile_image-70x70.png" alt="iDTatah">
-                </figure>
-      
-                <cite class="ta0-text-sm">
-                  <strong>iDTatah</strong> 
-                  <span class="ta0-block ta0-color-contrast-medium ta0-margin-top-4xs">Valorant, GTA, etc</span>
-                </cite>
-              </footer>
-            </div>
-      
-            <div class="ta0-bg-contrast-lower ta0-bg-opacity-30% ta0-radius-md ta0-padding-md ta0-flex@md ta0-flex-column@md ta0-col-4@md bg-twitch font-twitch">
-              <svg class="ta0-icon ta0-icon--xl ta0-color-contrast-low ta0-margin-bottom-2xs" aria-hidden="true" width="64" height="64" viewBox="0 0 64 64">
-                <polygon points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36" />
-                <polygon points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36" />
-              </svg>
-      
-              <blockquote class="ta0-line-height-md ta0-margin-bottom-md">Olá! Eu sou a Loana uma Vtuber que adora jogar jogos, assistir animes, ouvir música e fazer reacts. Gosto de me divertir e sempre estou procurando novos jogos para jogar, embora eu goste muito de um lolzinho, eu espero que você goste de me assistir e se divirta comigo.</blockquote>
-              
-              <footer class="ta0-flex ta0-flex-wrap ta0-items-center ta0-margin-top-auto@md">
-                <figure class="ta0-flex-shrink-0 ta0-margin-right-2xs" aria-hidden="true">
-                  <img class="ta0-block ta0-width-lg ta0-height-lg ta0-radius-50% ta0-border ta0-border-2 ta0-border-bg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/e18ef318-9eda-457b-8d83-305261d61b33-profile_image-70x70.png" alt="Loana">
-                </figure>
-      
-                <cite class="ta0-text-sm">
-                  <strong>Loana</strong> 
-                  <span class="ta0-block ta0-color-contrast-medium ta0-margin-top-4xs">LOL, TFT, etc</span>
-                </cite>
-              </footer>
-            </div>
-      
-            <div class="ta0-bg-contrast-lower ta0-bg-opacity-30% ta0-radius-md ta0-padding-md ta0-flex@md ta0-flex-column@md ta0-col-4@md bg-twitch font-twitch">
-              <svg class="ta0-icon ta0-icon--xl ta0-color-contrast-low ta0-margin-bottom-2xs" aria-hidden="true" width="64" height="64" viewBox="0 0 64 64">
-                <polygon points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36" />
-                <polygon points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36" />
-              </svg>
-      
-              <blockquote class="ta0-line-height-md ta0-margin-bottom-md">Eita eita, Me chamo Aline e faço live tem 3 meses, tô ao vivo todos os Dias jogando com os views e mostrando meu yorick egirl❤️</blockquote>
-      
-              <footer class="ta0-flex ta0-flex-wrap ta0-items-center ta0-margin-top-auto@md">
-                <figure class="ta0-flex-shrink-0 ta0-margin-right-2xs" aria-hidden="true">
-                  <img class="ta0-block ta0-width-lg ta0-height-lg ta0-radius-50% ta0-border ta0-border-2 ta0-border-bg" src="https://static-cdn.jtvnw.net/jtv_user_pictures/afbc7a80-4c39-43d6-b7ff-d39478274e62-profile_image-70x70.png" alt="Donzela">
-                </figure>
-      
-                <cite class="ta0-text-sm">
-                  <strong>DonzelaDoYorick</strong> 
-                  <span class="ta0-block ta0-color-contrast-medium ta0-margin-top-4xs">LOL e Valorant</span>
-                </cite>
-              </footer>
-              
-            </div>
-            <a href="stream.html" class="texto_strem">Todos os Streamers <img src="img/CTA Arrow.svg" alt=""></a>
-          </div>
-        </div>
-      </section>
+  <section class="team ty9-padding-y-xl">
+  <div class="ty9-container ty9-max-width-adaptive-lg">
+    <div class="ty9-margin-bottom-lg">
+      <h1 class="ty9-text-center introducao faca_amigos">Nossos Stramers</h1>
     </div>
-  </section>
 
-  <section class="containe">
-    <h1 class="introducao faca_amigos">
-      Empresas parceiras
-    </h1>
+    <div class="ty9-grid ty9-gap-sm">
 
-  </section>
+      <div class="card-v2 card-v2--blur-fx ty9-radius-md ty9-col-3@md">
+        <figure>
+          <img src="./img/Tata.png" alt="Image description">
+          <figcaption class="card-v2__caption ty9-padding-sm ty9-text-center">
+            <a href="https://twitch.tv/idTatah" target="_blank">
+              <div class="ty9-text-md ty9-text-base@md">idTatah</div>
+            </a>
+            <div class="ty9-margin-top-3xs ty9-text-sm ty9-opacity-70%">Streamer</div>
+          </figcaption>
+        </figure>
+      </div>
 
-  <section class="container" style="display: flex;">
+      <div class="card-v2 card-v2--blur-fx ty9-radius-md ty9-col-3@md">
+        <figure>
+          <img src="./img/yorick.jpg" alt="Image description">
+          <figcaption class="card-v2__caption ty9-padding-sm ty9-text-center">
+            <a href="https://www.twitch.tv/donzeladoyorick" target="_blank">
+              <div class="ty9-text-md ty9-text-base@md">DonzelaDoYorick</div>
+            </a>
+            <div class="ty9-margin-top-3xs ty9-text-sm ty9-opacity-70%">Streamer</div>
+          </figcaption>
+        </figure>
+      </div>
 
-    <div class="card">
-      <figure class="card__img-wrapper">
-        <img src="img/AQUA_TECH.png" alt="Image description">
-      </figure>
-    
-      <div class="alinhar">
-        <h4>Tecnologia e Desenvolvimento</h4>
-    
-        <p class="margin-top-xs margin-bottom-sm text-sm color-contrast-medium line-height-md">Ajudamos você e seu negócio a alcançar o próximo nivel</p>
-        
-        <footer>
-          <a href="#0" class="btn button-empresas text-sm width-100%">MAIS</a>
-        </footer>
+      <div class="card-v2 card-v2--blur-fx ty9-radius-md ty9-col-3@md">
+        <figure>
+          <img src="./img/tata2.png" alt="Image description">
+          <figcaption class="card-v2__caption ty9-padding-sm ty9-text-center">
+            <a href="https://www.twitch.tv/sarahchann" target="_blank">
+              <div class="ty9-text-md ty9-text-base@md">Sarah</div>
+            </a>
+            <div class="ty9-margin-top-3xs ty9-text-sm ty9-opacity-70%">Streamer</div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="card-v2 card-v2--blur-fx ty9-radius-md ty9-col-3@md">
+        <figure>
+          <img src="./img/loana.jpg" alt="Image description">
+          <figcaption class="card-v2__caption ty9-padding-sm ty9-text-center">
+            <a href="https://www.twitch.tv/loanaa_lol" target="_blank">
+              <div class="ty9-text-md ty9-text-base@md">Loana</div>
+            </a>
+            <div class="ty9-margin-top-3xs ty9-text-sm ty9-opacity-70%">Streamer</div>
+          </figcaption>
+        </figure>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="card">
-      <figure class="card__img-wrapper">
-        <img src="img/invest.png" alt="Image description">
-      </figure>
-    
-      <div class="alinhar">
-        <h4>Educação Financeira</h4>
-    
-        <p class="margin-top-xs margin-bottom-sm text-sm color-contrast-medium line-height-md">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-        
-        <footer>
-          <a href="#0" class="btn button-empresas text-sm width-100%">MAIS</a>
-        </footer>
-      </div>
-    </div>
-
-    <div class="card">
-      <figure class="card__img-wrapper">
-        <img src="img/huniverse.png" alt="Image description">
-      </figure>
-    
-      <div class="alinhar">
-        <h4>Cuidados Pessoais</h4>
-    
-        <p class="margin-top-xs margin-bottom-sm text-sm color-contrast-medium line-height-md">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-        
-        <footer>
-          <a href="#0" class="btn button-empresas text-sm width-100%">MAIS</a>
-        </footer>
-      </div>
-    </div>
-  </section>
-
-  <section class="container" style="margin-top: 100px;">
-
-  <div class="carousel cs3-flex cs3-flex-column js-carousel" data-drag="on">
-    <p class="cs3-sr-only">Carousel items</p>
-  
-    <div class="carousel__wrapper cs3-order-2 cs3-overflow-hidden">
-      <ol class="carousel__list">
-        <li class="carousel__item">
-          <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">1</div>
-        </li>
-  
-        <li class="carousel__item">
-          <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">2</div>
-        </li>
-  
-        <li class="carousel__item">
-          <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">3</div>
-        </li>
-  
-        <li class="carousel__item">
-          <div class="cs3-bg-contrast-lower cs3-height-4xl cs3-flex cs3-flex-center cs3-text-md">4</div>
-        </li>
-      </ol>
-    </div>
-    <nav class="cs3-margin-bottom-xs cs3-order-1 ">
-      <ul class="cs3-flex cs3-gap-3xs cs3-justify-end">
-        <li>
-          <button class="carousel__control carousel__control--prev js-carousel__control js-tab-focus">
-            <svg class="cs3-icon" viewBox="0 0 20 20">
-              <title>Show previous items</title>
-              <polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-            </svg>
-          </button>
-        </li>
-  
-        <li>
-          <button class="carousel__control carousel__control--next js-carousel__control js-tab-focus">
-            <svg class="cs3-icon" viewBox="0 0 20 20">
-              <title>Show next items</title>
-              <polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </section>
   
   </div>
 </article>
@@ -284,7 +184,7 @@
     <div class="me6-container me6-max-width-lg">
       <div class="me6-grid me6-gap-y-lg me6-gap-lg@lg">
         <div class="me6-col-3@lg me6-order-2@lg me6-text-right@lg">
-          <a class="main-footer__logo" href="#0">
+          <a class="main-footer__logo" href="index.html">
             <img src="./img/ilustracao.png" alt="" style="width: 100%;">
           </a>
         </div>
@@ -346,6 +246,8 @@
       </div>
     </div>
 
+    <!-- Botão para voltar ao topo da página -->
+
     <a class="back-to-top js-back-to-top" href="#" data-offset="100">
       <svg class="cd-icon" viewBox="0 0 20 20">
         <polyline points="2 13 10 5 18 13" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -360,6 +262,7 @@
   <script src="./js/_2_carousel.js"></script>
   <script src="./js/_1_back-to-top.js"></script>
   <script src="./js/_1_reading-progressbar.js"></script>
+  <script src="./js/_1_main-header.js"></script>
 
 </body>
 </html>
