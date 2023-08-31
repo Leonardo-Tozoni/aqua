@@ -69,9 +69,10 @@ Usage: codyhouse.co/license
 .main-footer__link {
   color: hsl(var(--me6-color-contrast-medium-hsl));
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 .main-footer__link:hover {
-  color: hsl(var(--me6-color-contrast-high-hsl));
+  color: #fff;
   text-decoration: underline;
 }
 

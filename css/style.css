@@ -136,6 +136,12 @@ body {
 	margin-top: 20px;
 	font-size: 20px;
 	font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+
+.texto_link:hover{
+  color: #72b9c6;
+  text-decoration: underline;
 }
 
 .bg_img_fundo {
@@ -171,12 +177,12 @@ body {
 	color: #FFF;
 	border: 2px solid #FFF;
 	border-radius: 7px;
+  transition: 0.3s ease-in-out;
 
 	&:hover {
 		background-image: linear-gradient(to right, #fff, #D1EBF3);
 		border: none;
 		color: #000;
-		transition: 0.30s;
 	}
 
 	&:hover a {

@@ -157,6 +157,11 @@ Usage: codyhouse.co/license
 @media(min-width: 64rem){
   .ty9-text-base\@md {
     font-size: var(--ty9-text-base);
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+  .ty9-text-base\@md:hover {
+    color: #772ce8;
   }
 
   .ty9-col-3\@md {
