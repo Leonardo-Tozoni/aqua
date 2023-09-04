@@ -214,6 +214,10 @@ img, video, svg {
   z-index: 3;
 }
 
+.header-sobre {
+  
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;

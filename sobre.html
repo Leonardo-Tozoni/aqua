@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./css/_2_article.css">
   <link rel="stylesheet" href="./css/_1_back-to-top.css">
   <link rel="stylesheet" href="./css/_1_main-header.css">
+  <link rel="stylesheet" href="css/_1_reading-progressbar.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,30 +21,38 @@
 </head>
 <body>
 
-  <header class="header mf1-position-relative js-header ">
-    <div class="header__container mf1-container mf1-max-width-lg">
-      <div class="header__logo">
-        <a href="#0">
-          <img src="./img/logo.png" alt="" style="width: 100px;">
-        </a>
-      </div>
-  
-      <button class="mf1-btn mf1-btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
-        <i class="header__trigger-icon" aria-hidden="true"></i>
-      </button>
-  
-      <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
-        <div class="header__nav-inner">
-          <div class="header__label">Main menu</div>
-          <ul class="header__list">
-            <li class="header__item"><a href="index.html" class="header__link">Home</a></li>
-            <li class="header__item"><a href="sobre.html" class="header__link" aria-current="page">Sobre</a></li>
-            <li class="header__item"><a href="https://lnk.bio/Aqua" target="_blank" class="header__link">Contato</a></li>
-          </ul>
+  <progress aria-hidden="true" class="reading-progressbar js-reading-progressbar" max="100" value="0">
+    <div class="reading-progressbar__fallback js-reading-progressbar__fallback"></div>
+  </progress>
+
+  <div class="">
+    <article class="js-reading-content">
+
+      <header class="header-sobre mf1-position-relative js-header ">
+        <div class="header__container mf1-container mf1-max-width-lg">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="" style="width: 100px;">
+            </a>
+          </div>
+      
+          <button class="mf1-btn mf1-btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+            <i class="header__trigger-icon" aria-hidden="true"></i>
+            <span>MENU</span>
+          </button>
+      
+          <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
+            <div class="header__nav-inner">
+              <div class="header__label"></div>
+              <ul class="header__list">
+                <li class="header__item"><a href="index.html" class="header__link">Home</a></li>
+                <li class="header__item"><a href="sobre.html" class="header__link" aria-current="page">Sobre</a></li>
+                <li class="header__item"><a href="https://lnk.bio/Aqua" target="_blank" class="header__link">Contato</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
-    </div>
-  </header>
+      </header>
 
   <article class="ad5-padding-y-lg" style="margin-top: 130px;">
     <header class="ad5-container ad5-max-width-xs ad5-margin-bottom-lg">
@@ -60,6 +69,9 @@
       
         <p>Nosso objetivo primordial é criar um ambiente caloroso e amistoso, destinado a cada indivíduo que faz parte do Aqua. Encorajamos a participação ativa de todos os membros, pois acreditamos que a comunidade se fortalece com a contribuição de cada voz. Através de atividades cuidadosamente planejadas, buscamos reafirmar constantemente os valores e propósito que guiam o Aqua. Além disso, nos esforçamos para oferecer entretenimento e momentos de diversão significativos, proporcionando assim uma experiência gratificante para todos os nossos membros.</p>
   </article>
+
+</article>
+</div>
 
     <!-- Footer -->
 
@@ -142,8 +154,12 @@
         <polyline points="2 13 10 5 18 13" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
       </svg>
     </a>
-
+    <script src="js/script.js"></script>
+    <script src="./js/_1_popover.js"></script>
+    <script src="./js/_1_swipe-content.js"></script>
+    <script src="./js/_2_carousel.js"></script>
     <script src="./js/_1_back-to-top.js"></script>
+    <script src="./js/_1_reading-progressbar.js"></script>
     <script src="./js/_1_main-header.js"></script>
 </body>
 </html>
