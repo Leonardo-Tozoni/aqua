@@ -242,7 +242,7 @@ body {
 
 .flecha-stream {
   top: 103px; 
-  left: 420px; 
+  left: 0px; 
   position: absolute;
 }
 
@@ -256,13 +256,11 @@ body {
 
 .bg_img_fundo {
 	margin-top: 300px;
-	height: 690px;
 }
 
 @media (max-width: 700px) {
   .bg_img_fundo {
-    margin-top: 300px;
-    height: 690px;
+    margin-top: 100px;
   }
 }
 
