@@ -16,6 +16,13 @@ body {
 	text-align: center;
 }
 
+.introducao-faca {
+	font-family: Josefin Sans;
+	font-size: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+
 @media (max-width: 700px) {
   .introducao {
     font-family: Josefin Sans;
@@ -50,12 +57,12 @@ body {
 
 
 .introducao_p {
-	margin-top: 28px;
 	margin-bottom: 40px;
 	font-size: 20px;
 	color: #DAD7D7;
 	text-align: center;
 	font-weight: 400;
+  margin-top: 20px !important;
 }
 
 /* Botões front page */
