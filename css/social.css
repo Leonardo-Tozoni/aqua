@@ -24,13 +24,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+/*body {
   background-color: #22232a;
   font-family: system-ui, sans-serif;
   color: hsl(230, 7%, 23%);
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
   line-height: 1.4;
-}
+}*/
 
 h1, h2, h3, h4 {
   line-height: 1.2;
